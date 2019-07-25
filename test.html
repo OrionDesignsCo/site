@@ -4,16 +4,18 @@
 	 <link href="http://allfont.net/allfont.css?fonts=book-antiqua" rel="stylesheet" type="text/css" />
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
+
 			/*		***MOBILE***		*/
 			@media only screen and (max-width: 768px) {
 				.header {
-					margin-top: 5vw;
-					margin-left: calc((100 - 50 - 1)/2 *1vw);
+					margin-top: 4vw;
+					margin-left: calc((100 - 50)/2 *1vw);
 					width: 50vw;
 					height: 40vw;
-					border: 1px blue solid;
 					margin-bottom: 1.5vw;
 				}
+				
+
 				
 				.nav {
 					margin-left: calc((100 - 90 - 1)/2 *1vw);
@@ -48,6 +50,24 @@
 					height: 25vw;
 					border: 1px grey solid;
 				}
+				
+				div.scrollmenu {
+				  background-color: #333;
+				  overflow: auto;
+				  white-space: nowrap;
+				}
+
+				div.scrollmenu a {
+				  display: inline-block;
+				  color: white;
+				  text-align: center;
+				  padding: 14px;
+				  text-decoration: none;
+				}
+
+				div.scrollmenu a:hover {
+				  background-color: #777;
+				}
 			
 			}
 			
@@ -55,11 +75,24 @@
 			@media only screen and (min-width: 769px) {
 				.header {
 					margin-top: 3vw;
-					margin-left: calc((100 - 22 - 1)/2 *1vw);
+					margin-left: calc((100 - 22)/2 *1vw);
 					width: 22vw;
 					height: 14vw;
-					border: 1px blue solid;
 					margin-bottom: 1.5vw;
+				}
+				
+				#img1 {
+					height: 9vw;
+					width: 9vw;
+					margin-left: calc((22 - 9)/2 *1vw);
+					margin-top: 0.5vw;
+				}
+				
+				#title {
+					margin: 0.5vw;
+					font-family: 'book antiqua';
+					font-size: 2.5vw;
+					text-align: center;
 				}
 				
 				.nav {
@@ -95,22 +128,55 @@
 					height: 25vw;
 					border: 1px grey solid;
 				}
+				
+				div.scrollmenu {
+				  background-color: #333;
+				  overflow: auto;
+				  white-space: nowrap;
+				}
+
+				div.scrollmenu a {
+				  display: inline-block;
+				  color: white;
+				  text-align: center;
+				  padding: 14px;
+				  text-decoration: none;
+				}
+
+				div.scrollmenu a:hover {
+				  background-color: #777;
+				}
+				
 			} 
-
-			
-
 		</style>
 	</head>
 
 	<body>
 		<!-- HEADER -->
 		<div class="header">
-			Header
+			<img id="img1" src="https://oriondesigns.co/assets/images/ico-122x122.jpg" /> <br />
+			<p id="title" >Orion Designs</p>
 		</div>
 		
 		<!-- NAVIGATION -->
 		<div class="nav">
-			Navigation
+			<div class="scrollmenu">
+			  <a href="#home">Home</a>
+			  <a href="#news">News</a>
+			  <a href="#contact">Contact</a>
+			  <a href="#about">About</a>
+			  <a href="#support">Support</a>
+			  <a href="#blog">Blog</a>
+			  <a href="#tools">Tools</a>  
+			  <a href="#base">Base</a>
+			  <a href="#custom">Custom</a>
+			  <a href="#more">More</a>
+			  <a href="#logo">Logo</a>
+			  <a href="#friends">Friends</a>
+			  <a href="#partners">Partners</a>
+			  <a href="#people">People</a>
+			  <a href="#work">Work</a>
+			</div>
 		</div>
 		
 		<!-- CAROUSEL -->
