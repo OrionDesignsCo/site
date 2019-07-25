@@ -4,13 +4,7 @@
 	 <link href="http://allfont.net/allfont.css?fonts=book-antiqua" rel="stylesheet" type="text/css" />
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
-			@media only screen and (min-width: 768px) {
-				.carousel {
-					height: 2px;
-				}
-			
-			}
-		
+			<!-- MOBILE -->
 			.header {
 				margin-left: calc((100 - 20 - 1)/2 *1vw);
 				width: 20vw;
@@ -20,8 +14,9 @@
 			}
 			
 			.nav {
-				margin-left: calc((100 - 95 - 1)/2 *1vw);
-				width: 95vw;
+				margin-left: calc((100 - 90 - 1)/2 *1vw);
+				margin-right: calc((100 - 90 - 1)/2 *1vw);
+				width: 90vw;
 				height: 60px;
 				border: 1px grey solid;
 				margin-bottom: 1.5vw;
@@ -30,7 +25,7 @@
 			.carousel {
 				margin-left: calc((100 - 80 - 1)/2 *1vw);
 				width: 80vw;
-				height: 20px;
+				height: 1px;
 				border: 1px grey solid;	
 			}
 			
@@ -38,8 +33,13 @@
 			
 			}
 			
-
+			<!-- DESKTOP -->
+			@media only screen and (min-width: 768px) {
+				.carousel {
+					height: 100vw;
+				}
 			
+			}
 		</style>
 	</head>
 
