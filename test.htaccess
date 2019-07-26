@@ -13,6 +13,7 @@
 					width: 50vw;
 					height: 40vw;
 					margin-bottom: 2vw;
+					
 				}
 				
 				#img1 {
@@ -27,8 +28,8 @@
 					font-family: book-antiqua;
 					font-size: 4vw;
 					text-align: center;
+					opacity: 0.9;
 				}
-
 				
 				.nav {
 					margin-left: calc((100 - 90)/2 *1vw);
@@ -99,7 +100,7 @@
 					border: 1px solid grey;
 				}
 				
-				.itemPRICE {
+				.itemNAME {
 					margin: 2.5% 15% 1% 15%;
 					width: 70%;
 					height: 15%;
@@ -119,30 +120,37 @@
 			@media only screen and (min-width: 769px) {
 				.header {
 					margin-top: 2vw;
-					margin-left: calc((100 - 22)/2 *1vw);
-					width: 22vw;
+					margin-left: calc((100 - 32)/2 *1vw);
+					width: 32vw;
 					height: 14vw;
-					margin-bottom: 1.5vw;
+					margin-bottom: 2.5vw;
 				}
 				
 				#img1 {
-					height: 9vw;
-					width: 9vw;
-					margin-left: calc((22 - 9)/2 *1vw);
+					height: 8vw;
+					width: 8vw;
+					margin-left: calc((32 - 8)/2 *1vw);
+					opacity: 0.9;
 				}
 				
 				#title {
-					margin: 0.7vw;
+					margin: 0.4vw;
 					font-family: book-antiqua;
-					font-size: 2.8vw;
+					font-size: 4.5vw;
 					text-align: center;
+					opacity: 0.75;
+					transition: 0.3s;
+				}
+				
+				#title:hover {
+					opacity: 0.5;
 				}
 				
 				.nav {
 					margin-left: calc((100 - 95)/2 *1vw);
 					margin-right: calc((100 - 95)/2 *1vw);
 					width: 95vw;
-					height: 60px;
+					height: 50px;
 					border-top: 1px grey solid;
 					border-bottom: 1px grey solid;
 					margin-bottom: 1.5vw;
@@ -150,6 +158,7 @@
 					font-family: arial, 'sans serif';
 					overflow: auto;
 					white-space: nowrap;
+					overflow-y: hidden;
 				}
 				
 				div.nav a {
@@ -158,7 +167,7 @@
 					display: inline-block;
 					color: #03101f;
 					text-align: center;
-					font-size: 18pt;
+					font-size: 16pt;
 					text-decoration: none;
 					padding-left: 1vw;
 					transition: 0.3s;
@@ -173,11 +182,28 @@
 				}
 				
 				.carousel {
-					margin-left: calc((100 - 80 - 1)/2 *1vw);
+					margin-left: calc((100 - 80)/2 *1vw);
 					width: 80vw;
 					height: 30vw;
-					border: 1px grey solid;	
 					margin-bottom: 1.5vw;
+					background-color: black;
+					opacity: 0.175;
+				}
+				
+				.feat{
+					
+				}
+				
+				.featTitle {
+					margin-left: calc((100 - 95)/2 *1vw);
+					margin-right: calc((100 - 95)/2 *1vw);
+					width: 95vw;
+					text-align: center;
+					font-family: 'book antiqua';
+					font-size: 26pt;
+					border-top: 1px grey solid;
+					border-bottom: 1px grey solid;
+					padding: 0.35vw;
 				}
 				
 				.grid {
@@ -193,31 +219,34 @@
 				td {
 					width: 50%;
 					height: 30vw;
-					border: 1px grey solid;
+					
 				}
 				
 				.itemBox {
 				}
 				
 				.itemIMG {
-					margin: 10% 10% 2.5% 10%;
+					margin: 0% 10% 2.5% 10%;
 					width: 80%;
 					height: 55%;
-					border: 1px solid grey;
+					background-color: black;
+					opacity: 0.2;
 				}
 				
-				.itemPRICE {
+				.itemNAME {
 					margin: 2.5% 15% 1% 15%;
 					width: 70%;
 					height: 15%;
-					border: 1px solid grey;
+					background-color: black;
+					opacity: 0.2;
 				}
 				
 				.itemBTN {
-					margin: 0% 20% 6.5% 20%;
+					margin: 5% 20% 5% 20%;
 					width: 60%;
 					height: 10%;
-					border: 1px solid grey;
+					background-color: black;
+					opacity: 0.2;
 				}
 				
 			} 
@@ -253,66 +282,70 @@
 		
 		</div>
 		
-		<!-- GRID -->
-		<div class="grid">
-			<table>
-				<tr> 
-					<td class="itembox">		
+		<!-- FEATURED -->
+		<div class="feat">
+			<p class="featTitle">Featured</p>
+			
+			<div class="grid">
+				<table>
+					<tr> 
+						<td class="itembox">		
+							
+							<div class="itemIMG">
+							</div>
+							
+							<div class="itemNAME">
+							</div>
+							
+							<div class="itemBTN">
+							</div>
+							
+						</td> 
 						
-						<div class="itemIMG">
-						</div>
-						
-						<div class="itemPRICE">
-						</div>
-						
-						<div class="itemBTN">
-						</div>
-						
-					</td> 
+						<td class="itembox">		
+							
+							<div class="itemIMG">
+							</div>
+							
+							<div class="itemNAME">
+							</div>
+							
+							<div class="itemBTN">
+							</div>
+							
+						</td> 
+					</tr>
 					
-					<td class="itembox">		
+					<tr> 
+						<td class="itembox">		
+							
+							<div class="itemIMG">
+							</div>
+							
+							<div class="itemNAME">
+							</div>
+							
+							<div class="itemBTN">
+							</div>
+							
+						</td> 
 						
-						<div class="itemIMG">
-						</div>
-						
-						<div class="itemPRICE">
-						</div>
-						
-						<div class="itemBTN">
-						</div>
-						
-					</td> 
-				</tr>
-				
-				<tr> 
-					<td class="itembox">		
-						
-						<div class="itemIMG">
-						</div>
-						
-						<div class="itemPRICE">
-						</div>
-						
-						<div class="itemBTN">
-						</div>
-						
-					</td> 
-					
-					<td class="itembox">		
-						
-						<div class="itemIMG">
-						</div>
-						
-						<div class="itemPRICE">
-						</div>
-						
-						<div class="itemBTN">
-						</div>
-						
-					</td> 
-				</tr>
+						<td class="itembox">		
+							
+							<div class="itemIMG">
+							</div>
+							
+							<div class="itemNAME">
+							</div>
+							
+							<div class="itemBTN">
+							</div>
+							
+						</td> 
+					</tr>
 
-			</table>
+				</table>
+			</div>
 		</div>
 	
 	
