@@ -7,7 +7,12 @@
 		
 			@font-face {
 				font-family: "book antiqua";
-				src: url("http://allfont.net/allfont.css?fonts=book-antiqua");
+				src: 	url("http://allfont.net/allfont.css?fonts=book-antiqua");
+				src: 	url("http://allfont.net/allfont.css?fonts=book-antiqua") format('embedded-opentype'), /* IE6-IE8 */
+						url("http://allfont.net/allfont.css?fonts=book-antiqua") format('woff2'), /* Super Modern Browsers */
+						url("http://allfont.net/allfont.css?fonts=book-antiqua") format('woff'), /* Pretty Modern Browsers */
+						url("http://allfont.net/allfont.css?fonts=book-antiqua")  format('truetype'), /* Safari, Android, iOS */
+						url("http://allfont.net/allfont.css?fonts=book-antiqua") format('svg'); /* Legacy iOS */
 			}
 
 			/*		***MOBILE***		*/
@@ -87,7 +92,7 @@
 					width: 95vw;
 					text-align: center;
 					font-family: 'book antiqua';
-					font-size: 18pt;
+					font-size: 16pt;
 					border-top: 1px grey solid;
 					border-bottom: 1px grey solid;
 					padding: 0.35vw;
