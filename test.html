@@ -2,7 +2,7 @@
 
 	<head>
 		<title> Orion Designs </title>
-	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			@font-face {
 				font-family:book antiqua;
@@ -15,7 +15,7 @@
 			@media only screen and (max-width: 768px) {
 				.header {
 					margin-top: 4vw;
-					margin-left: calc((100 - 70)/2 *1vw);
+					margin-left: calc((100 - 70 - 1)/2 *1vw);
 					width: 70vw;
 					margin-bottom: 0vw;
 				}
@@ -23,7 +23,7 @@
 				#img1 {
 					height: 20vw;
 					width: 20vw;
-					margin-left: calc((100 - 50)/2 *1vw);
+					margin-left: calc((100 - 50 - 1)/2 *1vw);
 					margin-top: 0.5vw;
 				}
 				
@@ -36,8 +36,8 @@
 				}
 				
 				.nav {
-					margin-left: calc((100 - 90)/2 *1vw);
-					margin-right: calc((100 - 90)/2 *1vw);
+					margin-left: calc((100 - 90 - 1)/2 *1vw);
+					margin-right: calc((100 - 90 - 1)/2 *1vw);
 					width: 90vw;
 					height: 10w;
 					border-top: 1px grey solid;
@@ -83,8 +83,8 @@
 				}
 				
 				.featTitle {
-					margin-left: calc((100 - 95)/2 *1vw);
-					margin-right: calc((100 - 95)/2 *1vw);
+					margin-left: calc((100 - 95 - 1)/2 *1vw);
+					margin-right: calc((100 - 95 - 1)/2 *1vw);
 					width: 95vw;
 					text-align: center;
 					font-family: 'book antiqua';
@@ -95,7 +95,7 @@
 				}
 				
 				.grid {
-					margin-left: calc((100 - 90)/2 *1vw);
+					margin-left: calc((100 - 90 - 1)/2 *1vw);
 					width: 90vw;
 					
 				}
@@ -143,17 +143,18 @@
 			@media only screen and (min-width: 769px) {
 				.header {
 					margin-top: 2vw;
-					margin-left: calc((100 - 32)/2 *1vw);
+					margin-left: calc((100 - 32 - 1)/2 *1vw);
 					width: 32vw;
 					height: 14vw;
 					margin-bottom: 2.5vw;
 					transition: 0.3s;
+					
 				}
 				
 				#img1 {
 					height: 8vw;
 					width: 8vw;
-					margin-left: calc((32 - 8)/2 *1vw);
+					margin-left: calc((32 - 8 - 1)/2 *1vw);
 					opacity: 0.9;
 					transition: 0.3s;
 				}
@@ -172,8 +173,8 @@
 				}
 				
 				.nav {
-					margin-left: calc((100 - 95)/2 *1vw);
-					margin-right: calc((100 - 95)/2 *1vw);
+					margin-left: calc((100 - 95 - 1)/2 *1vw);
+					margin-right: calc((100 - 95 - 1)/2 *1vw);
 					width: 95vw;
 					height: 50px;
 					border-top: 1px grey solid;
@@ -208,7 +209,7 @@
 				}
 				
 				.carousel {
-					margin-left: calc((100 - 80)/2 *1vw);
+					margin-left: calc((100 - 80 - 1)/2 *1vw);
 					width: 80vw;
 					height: 30vw;
 					margin-bottom: 1.5vw;
@@ -222,8 +223,8 @@
 				}
 				
 				.featTitle {
-					margin-left: calc((100 - 95)/2 *1vw);
-					margin-right: calc((100 - 95)/2 *1vw);
+					margin-left: calc((100 - 95 - 1)/2 *1vw);
+					margin-right: calc((100 - 95 - 1)/2 *1vw);
 					width: 95vw;
 					text-align: center;
 					font-family: 'book antiqua';
@@ -235,7 +236,7 @@
 				}
 				
 				.grid {
-					margin-left: calc((100 - 61.8)/2 *1vw);
+					margin-left: calc((100 - 61.8 - 1)/2 *1vw);
 					width: 61.8vw;
 					height: 60vw;
 					transition: 0.3s;
@@ -280,11 +281,21 @@
 					opacity: 0.2;
 				}
 				
+				.fuckyou {
+					width: 50vw;
+					border: 1px grey solid;
+					position: fixed;
+					left: 0px;
+					top: 0px;
+					height: 100%;
+				}
+				
 			} 
 		</style>
 	</head>
 
 	<body>
+		<div class="fuckyou"> </div>
 		<!-- HEADER -->
 		<div class="header">
 			<img id="img1" src="https://oriondesigns.co/assets/images/ico-122x122.jpg" /> <br />
