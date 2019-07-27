@@ -36,9 +36,11 @@
 				}
 				
 				.nav {
-					margin-left: calc((100 - 90 - 2)/2 *1vw);
-					margin-right: calc((100 - 90 - 2)/2 *1vw);
+					/*margin-left: calc((100 - 90 - 2)/2 *1vw);
+					margin-right: calc((100 - 90 - 2)/2 *1vw); */
+					margin: 0 auto;
 					width: 90vw;
+					max-height: 10vw;
 					border-top: 1px grey solid;
 					border-bottom: 1px grey solid;
 					margin-bottom: 1.5vw;
@@ -56,23 +58,23 @@
 				
 				.shadowL {
 					height: 100%;
-					max-height: 7.7vw;
+					max-height: 20pt;
 					width: 7.5vw;
 					z-index: 2;
 					background: linear-gradient(to right, white, transparent 100%);
 					position: absolute;
-					left: 5vw;
+					
 					top:44vw;
 					overflow: hidden;
 				}
 				.shadowR {
 					height: 100%;
-					max-height: 7.7vw;
+					max-height: 20pt;
 					width: 7.5vw;
 					z-index: 2;
 					background: linear-gradient(to left, white, transparent 100%);
 					position: absolute;
-					right: 3vw;
+					right: 4.4vw;
 					top:44vw;
 					overflow: hidden;
 				}
@@ -165,6 +167,15 @@
 					opacity: 0.2;
 				}
 			
+				.fuckyou {
+					width: 50vw;
+					border: 1px grey solid;
+					position: fixed;
+					left: 0px;
+					top: 0px;
+					height: 100%;
+					visibility: hidden;
+				}
 			}
 			
 			/*		***DESKTOP***		*/
@@ -182,7 +193,7 @@
 				#img1 {
 					height: 8vw;
 					width: 8vw;
-					margin-left: calc((32 - 8 - 1)/2 *1vw);
+					margin-left: calc((32 - 8)/2 *1vw);
 					opacity: 0.9;
 					transition: 0.3s;
 				}
@@ -316,7 +327,6 @@
 					left: 0px;
 					top: 0px;
 					height: 100%;
-					visibility: hidden;
 				}
 				
 			} 
@@ -327,7 +337,7 @@
 		<div class="fuckyou"> </div>
 		<!-- HEADER -->
 		<div class="header">
-			<img id="img1" src="https://oriondesigns.co/assets/images/ico-122x122.jpg" /> <br />
+			<img id="img1" src="ico.png" /> <br />
 			<p id="title" >Orion Designs</p>
 		</div>
 		
@@ -339,15 +349,13 @@
 				<a href="">Home</a>
 				<a href="">About</a>
 				<a href="">Store</a>
+				<a href="">Featured</a>
 				<a href="">New</a>  
 				<a href="">Rings</a>
 				<a href="">Necklaces</a>
 				<a href="">Instagram</a>
 				<a href="">Facebook</a>
 				<a href="">Snapchat</a>
-				<a href="">Store</a>
-				<a href="">New</a>  
-				<a href="">Rings</a>
 				<a href="">Contact</a>
 			</div>
 			
