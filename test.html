@@ -35,7 +35,7 @@
 					opacity: 0.8;
 				}
 				
-				.nav {
+				.scroller {
 					margin-left: calc((100 - 90 - 2)/2 *1vw);
 					margin-right: calc((100 - 90 - 2)/2 *1vw);
 					width: 90vw;
@@ -46,11 +46,21 @@
 					font-family: arial, 'sans serif';
 					overflow: auto;
 					white-space: nowrap;
+					max-height: 10vw;
+					overflow-y: hidden;
 				}
 				
-
+				.shdwimg {
+					width: 91vw;
+					max-height: 6vw;
+					position: absolute;
+					top: 45vw;
+					left: 5vw;
+					z-index: 1;
+					
+				}
 				
-				div.nav a {
+				div.scroller a {
 					line-height: 40pt;
 					vertical-align: text-bottom;
 					display: inline-block;
@@ -62,11 +72,11 @@
 					transition: 0.3s;
 				}
 
-				div.nav a:hover {
+				div.scroller a:hover {
 					opacity: 0.3;
 				}
 				
-				div.nav a:click {
+				div.scroller a:click {
 					opacity: 0.3;
 				}
 				
@@ -289,6 +299,7 @@
 					left: 0px;
 					top: 0px;
 					height: 100%;
+					visibility: hidden;
 				}
 				
 			} 
@@ -320,6 +331,7 @@
 				<a href="">New</a>  
 				<a href="">Rings</a>
 				<a href="">Contact</a>
+				<div class="shadow"> <img src="navbg.png" class="shdwimg"/> </div>
 			</div>
 			
 		</div>
