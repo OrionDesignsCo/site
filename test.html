@@ -13,8 +13,8 @@
 			@font-face {
 				font-family:book antiqua;
 				font-style:normal;
-				src:	url('book-antiqua_c5e55d1f9860012e4899952d48d92134.woff') format('woff'), /* Pretty Modern Browsers */
-						url('book-antiqua_c5e55d1f9860012e4899952d48d92134.ttf');  format('truetype'), /* Safari, Android, iOS */
+				src:	url('fonts/book-antiqua_c5e55d1f9860012e4899952d48d92134.woff') format('woff'), /* Pretty Modern Browsers */
+						url('fonts/book-antiqua_c5e55d1f9860012e4899952d48d92134.ttf');  format('truetype'), /* Safari, Android, iOS */
 			}
 
 			/*		***MOBILE***		*/
@@ -116,10 +116,9 @@
 					width: 90vw;
 					height: 100vw;
 					margin-bottom: 1.5vw;
-					background-image: url("promo1rec.jpg");
+					background-image: url("images/promo1rec.jpg");
 					background-size: cover;
 					background-color: black;
-					/*opacity: 0.175;*/
 				}
 				
 				.feat{
@@ -150,12 +149,67 @@
 				td {
 					width: 50%;
 					height: 40vw;
-					
+					transition: 0.3s;
+					font-family: 'book antiqua';
+					text-align: center;
 				}
 				
 				.itemBox {
 				}
 				
+				
+				.itemIMG {
+					margin: 5% auto 0% auto;
+					width: 80%;
+					height: 230px;
+					background-color: black;
+					opacity: 0.2;
+				}
+				
+				.itemIMG#PIMG1 {
+					background-image: url("images/Geo Ring.png");
+					opacity: 1;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					
+				}
+				.itemIMG#PIMG2 {
+					background-image: url("images/Geo Ring.png");
+					opacity: 1;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					
+				}
+				
+				.itemNAME {
+					margin: 0% auto 0% auto;
+					width: 70%;
+					height: 5%;
+					background-color: white;
+					opacity: 1;
+					font-size: 2vw;
+				}
+				
+				.itemBTN {
+					margin: 8% auto 5% auto;
+					width: 50%;
+					height: 9%;
+					background-color: white;
+					opacity: 1;
+					border: 2px solid rgb(0,0,0,0.65);
+					border-radius: 5px;
+					font-size: 1.8vw;
+					line-height: 3.4vw;
+				}
+				
+				
+				
+				
+				
+				
+				/*
 				.itemIMG {
 					margin: 10% 10% 2.5% 10%;
 					width: 80%;
@@ -178,7 +232,10 @@
 					height: 10%;
 					background-color: black;
 					opacity: 0.2;
-				}
+				} */
+				
+				
+				
 
 				.footer {
 					float:left;
@@ -353,9 +410,9 @@
 				}
 				
 				.grid {
-					margin: 0 auto;
+					margin: 20 auto;
 					width: 61.8vw;
-					
+					border: 1px solid white;
 					transition: 0.3s;
 				}
 				
@@ -366,36 +423,62 @@
 				
 				td {
 					width: 50%;
-					height: 30vw;
+					height: 40vw;
 					transition: 0.3s;
-					
+					font-family: 'book antiqua';
+					text-align: center;
 				}
 				
 				.itemBox {
 				}
 				
 				.itemIMG {
-					margin: 0% auto 2.5% auto;
+					margin: 5% auto 0% auto;
 					width: 80%;
-					height: 55%;
+					height: 265px;
 					background-color: black;
 					opacity: 0.2;
+				}
+				
+				.itemIMG#PIMG1 {
+					background-image: url("images/Geo Ring.png");
+					opacity: 1;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					border: 1px solid white;
+					
+				}
+				.itemIMG#PIMG2 {
+					background-image: url("images/Geo Ring.png");
+					opacity: 1;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					border: 1px solid white;
+					
 				}
 				
 				.itemNAME {
-					margin: 2.5% auto 1% auto;
+					margin: 2% auto 0% auto;
 					width: 70%;
-					height: 15%;
-					background-color: black;
-					opacity: 0.2;
+					height: 5%;
+					background-color: white;
+					opacity: 1;
+					border: 1px solid white;
+					font-size: 1.8vw;
 				}
 				
 				.itemBTN {
-					margin: 5% auto 5% auto;
-					width: 60%;
-					height: 10%;
-					background-color: black;
-					opacity: 0.2;
+					margin: 6% auto 5% auto;
+					width: 50%;
+					height: 7.5%;
+					background-color: white;
+					opacity: 1;
+					border: 3px solid rgb(0,0,0,0.65);
+					border-radius: 5px;
+					font-size: 1.3vw;
+					line-height: 2.6vw;
 				}
 
 				.footer {
@@ -458,7 +541,7 @@
 		<div class="fuckyou"> </div>
 		<!-- HEADER -->
 		<div class="header">
-			<img id="img1" src="ico.png" /> <br />
+			<img id="img1" src="images/ico.png" /> <br />
 			 <p id="title" >Orion Designs</p>
 		</div>
 		
@@ -495,12 +578,12 @@
 				<table>
 					<tr> 
 						<td class="itembox">		
-							<div class="itemIMG"></div>
-							<div class="itemNAME"></div>
-							<div class="itemBTN"></div>
+							<div class="itemIMG" id="PIMG1"></div>
+							<div class="itemNAME">Geo Ring</div>
+							<div class="itemBTN"><span style="text-decoration: line-through;">£29.99</span> £19.85</div>
 						</td> 
 						<td class="itembox">		
-							<div class="itemIMG"></div>
+							<div class="itemIMG" id="PIMG2"></div>
 							<div class="itemNAME"></div>	
 							<div class="itemBTN"></div>
 						</td> 
