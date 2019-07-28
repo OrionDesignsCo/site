@@ -1,0 +1,430 @@
+<html>
+
+	<head>
+		<title>Orion</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body {
+				margin: 0;
+				overflow-x: hidden;
+			}
+			
+			a {
+				color: black;
+				text-decoration: none;
+				opacity: 0.85
+			}
+			
+			@font-face {
+				font-family:book antiqua;
+				font-style:normal;
+				src:	url('Fonts/book-antiqua_c5e55d1f9860012e4899952d48d92134.woff') format('woff'), /* Pretty Modern Browsers */
+						url('Fonts/book-antiqua_c5e55d1f9860012e4899952d48d92134.ttf');  format('truetype'), /* Safari, Android, iOS */
+			}
+
+			/*		***MOBILE***		*/
+			@media only screen and (max-width: 768px) {
+				.header {
+					margin-top: 4vw;
+					/*margin-left: calc((100 - 70 - 1)/2 *1vw);*/
+					margin-left: auto;
+					margin-right:auto;
+					width: 70vw;
+					margin-bottom: 0vw;
+					horizontal-align: middle;
+				}
+				
+				#img1 {
+					height: 35vw;
+					width: 35vw;
+					margin-left: calc((70 - 33)/2 *1vw);
+					margin-top: 3vw;
+					margin-bottom: 3vw;
+				}
+				
+				#title {
+					/*margin: 1vw 1vw 4vw 1vw;
+					font-family: 'book antiqua';
+					font-size: 10vw;
+					text-align: center;
+					opacity: 0.8;*/
+					font-size: 0vw;
+					visibility:hidden;
+				}
+				
+				.nav {
+					/*margin-left: calc((100 - 90 - 2)/2 *1vw);
+					margin-right: calc((100 - 90 - 2)/2 *1vw); */
+					margin: 0 auto;
+					width: 90vw;
+					max-height: 10vw;
+					border-top: 1px grey solid;
+					border-bottom: 1px grey solid;
+					margin-bottom: 1.5vw;
+					vertical-align:top;
+				}
+				
+				.scroller {
+					text-align: center;
+					font-family: arial, 'sans serif';
+					overflow: auto;
+					white-space: nowrap;
+					max-height: 10vw;
+					overflow-y: hidden;
+				}
+				
+				.shadowL {
+					height: 100%;
+					max-height: 20pt;
+					width: 7.5vw;
+					z-index: 2;
+					background: linear-gradient(to right, white, transparent 100%);
+					position: absolute;
+					top:46.4vw;
+					overflow: hidden;
+				}
+				.shadowR {
+					height: 100%;
+					max-height: 20pt;
+					width: 7.5vw;
+					z-index: 2;
+					background: linear-gradient(to left, white, transparent 100%);
+					position: absolute;
+					right: 4.4vw;
+					top:46.4vw;
+					overflow: hidden;
+				}
+				
+				div.scroller a {
+					line-height: 30pt;
+					vertical-align: text-bottom;
+					display: inline-block;
+					color: #03101f;
+					text-align: center;
+					font-size: 12pt;
+					text-decoration: none;
+					padding-left: 0.9vw;
+					transition: 0.3s;
+				}
+
+				div.scroller a:hover {
+					opacity: 0.3;
+				}
+				
+				div.scroller a:click {
+					opacity: 0.3;
+				}
+				
+				.footer {
+					float:left;
+					position:relative;                  
+					bottom:0;                          
+					right:0;  
+					width: 100%;
+					height: 17vw;
+					background-color: rgb(0,0,0,0.875);
+					color: white;
+					text-align: center;
+					margin-top: 14vw;
+				}
+				
+				.fIcons {
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 4vw;
+					margin-bottom: 1vw;
+					height: 5vw;
+					width: 35vw;
+					background-color: rgb(255, 0,0, 0.);
+				}
+				
+				.ICOIG {
+					height: 5vw; 
+					width: 5vw;
+					margin-right: 4vw;
+				}
+				
+				.ICOMAIL {
+					height: 5vw; 
+					width: 6.5vw;
+				}
+				
+				.ICOSHOP {
+					height: 5vw; 
+					width: 5vw; 
+					margin-left: 4vw;
+				}
+				
+				.fText {
+					margin-top: 4vw;
+					color: white;
+					font-size: 2vw;
+					font-family: 'book antiqua';
+				}
+			
+				.fuckyou {
+					width: 50vw;
+					border: 1px grey solid;
+					position: fixed;
+					left: 0px;
+					top: 0px;
+					height: 100%;
+					visibility: hidden;
+				}
+				
+				.title {
+					text-align: center;
+					font-family: 'book antiqua';
+					font-size: 4vw;
+				}
+				
+				.textContent {
+					width: 70vw;
+					margin: auto;
+					margin-top: 3vw;
+				}
+			}
+			
+			/*		***DESKTOP***		*/
+			@media only screen and (min-width: 769px) {
+				.header {
+					margin-top: 2vw;
+					margin-left: calc((100 - 32 - 1)/2 *1vw);
+					width: 32vw;
+					height: 12vw;
+					margin-bottom: 2.5vw;
+					transition: 0.3s;
+					
+				}
+				
+				#img1 {
+					height: 12vw;
+					width: 12vw;
+					margin-left: calc((32 - 12)/2 *1vw);
+					opacity: 0.9;
+					transition: 0.5s;
+					margin-bottom: 0;
+				}
+				
+				#title {
+					margin: 0;
+					font-family: book-antiqua;
+					text-align: center;
+					opacity: 0.75;
+					transition: 0.35s;
+					visibility: hidden;
+					height: 0;
+				}
+				
+				#title:hover {
+					opacity: 0.5;
+				}
+				
+				.nav {
+					margin: 0 auto;
+					width: 95vw;
+					height: 5px;
+					border-top: 1px grey solid;
+					border-bottom: 1px grey solid;
+					margin-bottom: 1.5vw;
+					text-align: center;
+					font-family: arial, 'sans serif';
+					overflow: auto;
+					white-space: nowrap;
+					overflow-y: hidden;
+					transition: 0.35s;
+				}
+				.nav:hover {
+					height: 40px;
+				}
+				
+				div.nav a {
+					line-height: 30pt;
+					vertical-align: text-bottom;
+					display: inline-block;
+					color: #03101f;
+					text-align: center;
+					font-size: 16pt;
+					text-decoration: none;
+					padding-left: 1vw;
+					transition: 0.2s;
+				}
+
+				div.nav a:hover {
+					opacity: 0.4;
+					font-size: 16.3pt;
+				}
+				
+				div.nav a:click {
+					opacity: 0.3;
+				}
+				
+				.shadowL {
+					height: 0;
+					width: 0;
+					visibility: hidden;
+				}
+				.shadowR {
+					height: 0;
+					width: 0;
+					visibility: hidden;
+				}
+
+				.footer {
+					float:left;
+					position:relative;                  
+					bottom:0;                          
+					right:0;  
+					width: 100%;
+					height: 10vw;
+					background-color: rgb(0,0,0,0.9);
+					margin-top: 6vw;
+					text-align: center;
+				}
+				
+				.fIcons {
+					margin-top: 3.3vw;
+					margin-bottom: 1vw;
+				}
+				
+				.ICOIG {
+					height: 2.2vw; 
+					width: 2.2vw;
+					margin-right: 2vw;
+				}
+				
+				.ICOMAIL {
+					height: 2.2vw; 
+					width: 3vw;
+				}
+				
+				.ICOSHOP {
+					height: 2.2vw; 
+					width: 2.2vw; 
+					margin-left: 2vw;
+				}
+
+				
+				.fText {
+					margin-top: 1.6vw;
+					color: white;
+					font-size: 1.1vw;
+					font-family: 'book antiqua';
+				}
+				
+				
+				.fuckyou {
+					width: 50vw;
+					border: 1px grey solid;
+					position: fixed;
+					left: 0px;
+					top: 0px;
+					height: 0;
+					visibility: hidden;
+				}
+				
+				.title {
+					text-align: center;
+					font-family: 'book antiqua';
+					font-size: 3vw;
+				}
+				
+				.textContent {
+					width: 60vw;
+					margin: auto;
+					margin-top: 3vw;
+					font-size: 16pt;
+					font-family: arial;
+				}
+				
+				.reqs {
+					width: 60vw;
+					margin: auto;
+					font-family: arial;
+				}
+				
+				table {
+					margin-top: 0;
+					margin: auto;
+					width: inherit;
+				}
+				
+				tr {
+					width: inherit;
+				}
+				
+				td {
+					width: 50%;
+					text-align: center;
+				}
+			} 
+		</style>
+	</head>
+
+	<body>
+		<div class="fuckyou"> </div>
+		<!-- HEADER -->
+		<div class="header">
+			<img id="img1" src="images/ico.png" /> <br />
+			 <p id="title" >Orion Designs</p>
+		</div>
+		
+		<!-- NAVIGATION -->
+		<div class="nav">
+			<div class="shadowL"> </div>
+			<div class="shadowR"> </div>
+			<div class="scroller">
+				<a href="home.html">Home</a>
+				<a href="">About</a>
+				<a href="https://www.shapeways.com/shops/oriondesign" target="_blank">Store</a>
+				<a href="#featured">Featured</a>
+				<a href="">New</a>  
+				<a href="">Rings</a>
+				<a href="">Necklaces</a>
+				<a href="https://www.instagram.com/oriondesignsco/" target="_blank">Instagram</a>
+				<a href="">Facebook</a>
+				<a href="">Snapchat</a>
+				<a href="mailto:support@oriondesigns.co">Contact</a>
+			</div>
+		</div>
+		
+		<!-- CONTENT -->
+		<div class="content">
+			<div class="title">Jewelry Product Designer Wanted</div>
+			<div class="textContent">
+				<p> We are looking to expand our small team by enlisting a new Jewelry Product Designer.
+				This position entails producing ring, necklace, and other accessory designs for the Orion Designs brand.
+				You will have the oppurtunity to see your concepts come into reality as a high quality product. <br />
+				Orion is online-based, and this role is highly flexible. It is not a full or part time
+				employment position.</p>
+				<div class="reqs">
+					<p style="font-size: 20pt; margin-top: 0;">Requirements:</p>
+					<table>
+						<tr><th>Required</th><th>Desired</th></tr>
+						<tr><td>2D/Sketching Experience</td><td>3D/CAD Experience</td></tr>
+						<tr><td>Video Call Availability</td><td>Fashion/Style Experience</td></tr>
+					</table>
+				</div>
+				<br />
+				If you are interested, please enquire with any questions and/or personal experience information and we will
+				get back to you.
+				<br /><br />
+				<a href="mailto:support@oriondesigns">support@oriondesigns</a>
+			</div>
+			
+		</div>
+		
+	
+		<!-- FOOTER -->
+		<div class="footer">
+			<div class="fIcons">
+				<a href="https://www.instagram.com/oriondesignsco/" target="_blank"><img src="FICO/IG.png" class="ICOIG"/></a>
+				<a href="mailto:support@oriondesigns.co"><img src="FICO/MAIL.png" class="ICOMAIL"/></a>
+				<a href="https://www.shapeways.com/shops/oriondesign" target="_blank"><img src="FICO/SHOP.png" class="ICOSHOP"/></a>
+			</div>
+			<div class="fText">Orion Designs Co - Official Orion Web Store</div>
+		</div>
+	</body>
+
+</html>
